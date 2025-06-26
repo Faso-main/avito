@@ -574,4 +574,6 @@ def main():
 
 # --- Точка входа в скрипт ---
 if __name__ == "__main__":
-    main()
+    try: main()
+    except KeyboardInterrupt as e: logger.exception(f'Остановлено пользователем......')
+    except Exception as e: logger.error(f'Ошибка вида: {e}')
