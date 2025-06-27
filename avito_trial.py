@@ -572,7 +572,7 @@ def main():
             if sent_messages >= messages_count:
                 break # Выход из внешнего цикла while, если лимит был достигнут и контекст закрыт.
 
-# --- Точка входа в скрипт ---
+
 if __name__ == "__main__":
     try: main()
     except KeyboardInterrupt as e: logger.exception(f'Остановлено пользователем......')
