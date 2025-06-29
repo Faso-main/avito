@@ -271,7 +271,7 @@ def main():
             with sync_playwright() as p:
                 context = p.firefox.launch_persistent_context(
                     user_data_dir=user_data_dir,
-                    headless=False
+                    headless=True
                 )
                 if context.pages:
                     page = context.pages[0]
